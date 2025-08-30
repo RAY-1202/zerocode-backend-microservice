@@ -1,10 +1,10 @@
 package com.ray.zerocodeuser.aop;
 
-import com.ray.zerocodeuser.annotation.AuthCheck;
-import com.ray.zerocodeuser.exception.BusinessException;
-import com.ray.zerocodeuser.exception.ErrorCode;
-import com.ray.zerocodeuser.model.entity.User;
-import com.ray.zerocodeuser.model.enums.UserRoleEnum;
+import com.ray.zerocode.annotation.AuthCheck;
+import com.ray.zerocode.exception.BusinessException;
+import com.ray.zerocode.exception.ErrorCode;
+import com.ray.zerocode.model.entity.User;
+import com.ray.zerocode.model.enums.UserRoleEnum;
 import com.ray.zerocodeuser.service.UserService;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;

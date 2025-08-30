@@ -2,10 +2,10 @@ package com.ray.zerocodeuser.service;
 
 import com.mybatisflex.core.query.QueryWrapper;
 import com.mybatisflex.core.service.IService;
-import com.ray.zerocodeuser.model.dto.UserQueryRequest;
-import com.ray.zerocodeuser.model.entity.User;
-import com.ray.zerocodeuser.model.vo.LoginUserVO;
-import com.ray.zerocodeuser.model.vo.UserVO;
+import com.ray.zerocode.model.dto.UserQueryRequest;
+import com.ray.zerocode.model.entity.User;
+import com.ray.zerocode.model.vo.LoginUserVO;
+import com.ray.zerocode.model.vo.UserVO;
 import jakarta.servlet.http.HttpServletRequest;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package com.ray.zerocodeuser.mapper;
 
 import com.mybatisflex.core.BaseMapper;
-import com.ray.zerocodeuser.model.entity.User;
+import com.ray.zerocode.model.entity.User;
 
 /**
  * 用户 映射层。

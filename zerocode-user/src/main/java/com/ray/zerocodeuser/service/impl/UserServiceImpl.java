@@ -5,14 +5,14 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
 import com.mybatisflex.core.query.QueryWrapper;
 import com.mybatisflex.spring.service.impl.ServiceImpl;
-import com.ray.zerocodeuser.exception.BusinessException;
-import com.ray.zerocodeuser.exception.ErrorCode;
+import com.ray.zerocode.exception.BusinessException;
+import com.ray.zerocode.exception.ErrorCode;
 import com.ray.zerocodeuser.mapper.UserMapper;
-import com.ray.zerocodeuser.model.dto.UserQueryRequest;
-import com.ray.zerocodeuser.model.entity.User;
-import com.ray.zerocodeuser.model.enums.UserRoleEnum;
-import com.ray.zerocodeuser.model.vo.LoginUserVO;
-import com.ray.zerocodeuser.model.vo.UserVO;
+import com.ray.zerocode.model.dto.UserQueryRequest;
+import com.ray.zerocode.model.entity.User;
+import com.ray.zerocode.model.enums.UserRoleEnum;
+import com.ray.zerocode.model.vo.LoginUserVO;
+import com.ray.zerocode.model.vo.UserVO;
 import com.ray.zerocodeuser.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Service;
@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.ray.zerocodeuser.constant.UserConstant.USER_LOGIN_STATE;
+import static com.ray.zerocode.constant.UserConstant.USER_LOGIN_STATE;
 
 /**
  * 用户 服务层实现。

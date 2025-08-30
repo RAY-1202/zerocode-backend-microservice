@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@MapperScan("com.ray.zerocodeuser.mapper")
+@MapperScan("com.ray.zerocode.mapper")
 @ComponentScan("com.ray")
 public class ZeroCodeUserApplication {
     public static void main(String[] args) {
