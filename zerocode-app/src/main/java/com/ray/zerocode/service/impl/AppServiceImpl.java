@@ -31,6 +31,7 @@ import com.ray.zerocode.service.AppService;
 import com.ray.zerocode.service.ChatHistoryService;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
@@ -55,11 +56,6 @@ import java.util.stream.Collectors;
 public class AppServiceImpl extends ServiceImpl<AppMapper, App>  implements AppService{
 
     @Resource
-    @Lazy
-    private InnerUserService userService;
-
-
-    @Resource
     private AiCodeGeneratorFacade aiCodeGeneratorFacade;
 
     @Resource
@@ -71,9 +67,12 @@ public class AppServiceImpl extends ServiceImpl<AppMapper, App>  implements AppS
     @Resource
     private VueProjectBuilder vueProjectBuilder;
 
-    @Resource
-    @Lazy
+    @DubboReference
+    private InnerUserService userService;
+
+    @DubboReference
     private InnerScreenshotService screenshotService;
+
 
     @Resource
     private AiCodeGenTypeRoutingServiceFactory aiCodeGenTypeRoutingServiceFactory;

@@ -32,9 +32,6 @@ public class ChatHistoryController {
     @Resource
     private ChatHistoryService chatHistoryService;
 
-    @Resource
-    @Lazy
-    private InnerUserService userService;
 
     /**
      * 分页查询某个应用的对话历史（游标查询）

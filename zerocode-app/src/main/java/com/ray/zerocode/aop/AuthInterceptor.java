@@ -24,10 +24,6 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 @Component
 public class AuthInterceptor {
 
-    @Resource
-    @Lazy
-    private InnerUserService userService;
-
     //定义切点
 
     /**
